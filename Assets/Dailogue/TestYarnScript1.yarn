@@ -1,0 +1,70 @@
+﻿title: Declarations
+---
+/// Mask 1 points (global across the Yarn Project)
+<<declare $mask1 = 0>>
+
+/// Mask 2 points (global across the Yarn Project)
+<<declare $mask2 = 0>>
+
+/// Mask 3 points (global across the Yarn Project)
+<<declare $mask3 = 0>>
+
+// This node only exists to declare variables.
+// You do NOT need to run this node for declarations to take effect.
+===
+
+title: TestYarnScript1
+---
+Alex: Hey. You made it.
+You: Yeah — traffic was wild.
+
+Alex: So… first date rules. Coffee or boba?
+
+-> Coffee
+    <<set $mask1 = $mask1 + 4>>
+    <<set $mask2 = $mask2 + 2>>
+    <<set $mask3 = $mask3 + 1>>
+    You: Coffee. I need the caffeine to survive this conversation.
+    Alex: Respect. Bold choice.
+    (debug) m1={$mask1} m2={$mask2} m3={$mask3}
+    <<jump AfterDrink>>
+-> Boba
+    <<set $mask1 = $mask1 + 1>>
+    <<set $mask2 = $mask2 + 3>>
+    <<set $mask3 = $mask3 + 2>>
+    You: Boba. Specifically the kind that makes my wallet cry.
+    Alex: Perfect. Financial responsibility is overrated.
+    (debug) m1={$mask1} m2={$mask2} m3={$mask3}
+    <<jump AfterDrink>>
+
+===
+
+title: AfterDrink
+---
+Alex: Alright. Important question.
+Alex: Are you a "text back in 2 minutes" person or a "reply tomorrow" person?
+
+-> 2 minutes
+    <<set $mask1 = $mask1 + 1>>
+    <<set $mask2 = $mask2 + 1>>
+    <<set $mask3 = $mask3 + 3>>
+    You: Two minutes. If I don’t reply fast, I forget you exist.
+    Alex: Honestly? Same.
+    (debug) m1={$mask1} m2={$mask2} m3={$mask3}
+    <<jump End>>
+-> Tomorrow
+    <<set $mask1 = $mask1 + 2>>
+    <<set $mask2 = $mask2 + 1>>
+    <<set $mask3 = $mask3 + 1>>
+    You: Tomorrow. I like suspense.
+    Alex: Wow. Mysterious. Slightly terrifying.
+    (debug) m1={$mask1} m2={$mask2} m3={$mask3}
+    <<jump End>>
+
+===
+
+title: End
+---
+Alex: Cool. Let’s go grab that drink.
+(debug) FINAL m1={$mask1} m2={$mask2} m3={$mask3}
+===
