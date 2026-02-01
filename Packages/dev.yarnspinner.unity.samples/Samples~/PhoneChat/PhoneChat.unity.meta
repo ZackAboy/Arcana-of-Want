@@ -1,6 +1,6 @@
 fileFormatVersion: 2
-guid: fe3ef41c1e2c34a0f8f96868c6fd312d
-TextScriptImporter:
+guid: 6d9e8b531acf94d42b2861431f5e3820
+DefaultImporter:
   externalObjects: {}
   userData: 
   assetBundleName: 
@@ -9,6 +9,6 @@ AssetOrigin:
   serializedVersion: 1
   productId: 319418
   packageName: Yarn Spinner for Unity Samples
-  packageVersion: 
-  assetPath: Packages/dev.yarnspinner.unity/LICENSE.md
-  uploadId: 0
+  packageVersion: 3.1.0
+  assetPath: Packages/dev.yarnspinner.unity.samples/Samples~/PhoneChat/PhoneChat.unity
+  uploadId: 827992

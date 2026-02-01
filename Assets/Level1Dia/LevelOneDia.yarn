@@ -1,0 +1,159 @@
+﻿title: LevelOneDia
+---
+<<declare $simp = 0>>
+<<declare $arbiter = 0>>
+<<declare $martyr = 0>>
+<<jump Level1_Kai_Start>>
+===
+
+title: Level1_Kai_Start
+---
+Kai: Hey.
+-> Hey.
+    <<jump Kai_Intro>>
+-> What's up?
+    <<jump Kai_Intro>>
+===
+
+title: Kai_Intro
+---
+Kai: Nothing. Just couldn't sleep.
+I hesitate before replying.
+-> Me neither.
+    <<jump Kai_Night_A>>
+-> Do you want to talk about it?
+    <<jump Kai_Night_B>>
+===
+
+title: Kai_Night_A
+---
+Kai: Yeah... it's been one of those nights.
+<<jump Kai_Typing>>
+===
+
+title: Kai_Night_B
+---
+Kai: Not really. How've you been?
+<<jump Kai_Typing>>
+===
+
+title: Kai_Typing
+---
+I remember what her typing rhythm feels like.
+My fingers hover over the keyboard.
+I want to say so much to her, but nothing feels enough.
+-> It's been a while.
+-> Better now that we're talking.
+    <<set $simp += 1>>
+-> Same old. Busy.
+    <<set $arbiter += 1>>
+<<jump Kai_Reunion>>
+===
+
+title: Kai_Reunion
+---
+
+<<show_character "Kai">>
+We met by the sea.
+She has changed a lot since the last time I saw her,
+yet nothing has changed.
+Kai: I miss you.
+-> Yeah, it's been a while.
+-> I've missed you too.
+    <<set $simp += 3>>
+<<jump Kai_Confession>>
+===
+
+title: Kai_Confession
+---
+Kai: Do you still like me?
+-> I've always liked you.
+    <<set $simp += 1>>
+-> Yeah, but as a friend.
+-> It's kinda weird.
+    <<set $arbiter += 1>>
+
+Kai: Can we... be together, even if just for a short while?
+
+-> ...Let's see where this goes.
+    <<set $arbiter += 1>>
+-> I don't think I can do this again.
+    <<jump Kai_Early_End>>
+-> Do you know how many times I have dreamed about this moment?
+    <<set $simp += 2>>
+<<jump Kai_Two_Weeks>>
+===
+
+title: Kai_Early_End
+---
+I shouldn't say no to Kai.
+But I did.
+She's the only one that I ve ever loved.
+<<jump Level2_Annie_Intro>>
+===
+
+title: Kai_Two_Weeks
+---
+
+Two weeks later.
+
+Kai: I'm sorry, but I can't do this anymore.
+
+-> Why?
+-> What happened?
+-> What's wrong with you?
+    <<set $arbiter += 3>>
+
+Kai: I care about you...
+Kai: And I'll always love you.
+Kai: You're special for me.
+
+-> You're really special for me too.
+    <<set $simp += 3>>
+-> No reply.
+    <<set $arbiter += 1>>
+-> I have never stopped loving you.
+    <<set $simp += 5>>
+
+Kai: But I can't get over my ex.
+Kai: I know I'm such a shitty person.
+Kai: You deserve better.
+-> Why can't we just enjoy being together now, and leave it until you leave?
+    <<set $simp += 1>>
+-> I don't care, I just want to be with you now.
+    <<set $simp += 3>>
+-> I'm done with you.
+    <<set $arbiter += 3>>
+
+Kai: I'm sorry.
+<<hide_character "Kai">>
+
+<<jump Level2_Annie_Intro>>
+
+===
+
+title: Level2_Annie_Intro
+---
+
+I can't believe Kai is gone.
+I thought we were something special.
+
+Annie: What happened to you lately?
+
+-> I was dumped by the girl I liked for 4 years.
+-> Just another shit-ass relationship.
+-> I'm fine.
+    Annie: Just text me if you need to talk.
+    <<jump Level3_Blake_Start>>
+
+Annie: Wanna meet my high school friend Sylvia?
+Annie: She's in your dream school.
+Annie: Maybe you should start focusing on your college application season.
+
+-> Yeah you're right.
+-> Yeah I've always wanted to meet her.
+    <<set $arbiter += 1>>
+
+<<jump Sylvia_Intro>>
+
+===
