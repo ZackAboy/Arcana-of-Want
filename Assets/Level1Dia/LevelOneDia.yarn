@@ -157,3 +157,17 @@ Annie: Maybe you should start focusing on your college application season.
 <<jump Sylvia_Intro>>
 
 ===
+
+title: Sylvia_Intro
+---
+<<hide_all_characters>>
+Annie: I'll text you her details later.
+<<stop>>
+===
+
+title: Level3_Blake_Start
+---
+<<hide_all_characters>>
+// TODO: Replace this stub with Blake's level 3 dialogue.
+<<stop>>
+===

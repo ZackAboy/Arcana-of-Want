@@ -534,6 +534,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: '::'
   characters:
   - {fileID: 332428952}
+  dialogueRunner: {fileID: 0}
+  highlightedColor: {r: 1, g: 1, b: 1, a: 1}
+  dimmedColor: {r: 1, g: 1, b: 1, a: 0.4}
+  highlightScale: 1.05
+  dimInactiveCharacters: 1
 --- !u!4 &396609045
 Transform:
   m_ObjectHideFlags: 0
