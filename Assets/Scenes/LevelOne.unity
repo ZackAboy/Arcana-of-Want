@@ -127,6 +127,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1236886659}
     m_Modifications:
+    - target: {fileID: 1577781817624987266, guid: ffc2d0d915a4e438398895b640bd3f2c, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -4166580829966953713, guid: 71014c1e1eda14ecd883fe4af13bf18d, type: 3}
+    - target: {fileID: 5103303546164300365, guid: ffc2d0d915a4e438398895b640bd3f2c, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -4166580829966953713, guid: 71014c1e1eda14ecd883fe4af13bf18d, type: 3}
     - target: {fileID: 6916812751057179158, guid: ffc2d0d915a4e438398895b640bd3f2c, type: 3}
       propertyPath: m_Name
       value: MasksOverlay
@@ -211,6 +219,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7469406158427992109, guid: ffc2d0d915a4e438398895b640bd3f2c, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -4166580829966953713, guid: 71014c1e1eda14ecd883fe4af13bf18d, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
