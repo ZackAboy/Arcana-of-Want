@@ -872,7 +872,7 @@ MonoBehaviour:
   dialogueRunner: {fileID: 1181041683}
   autoMode: 0
   skipMode: 0
-  autoDelay: 0.6
+  autoDelay: 2
 --- !u!4 &1188614636
 Transform:
   m_ObjectHideFlags: 0
