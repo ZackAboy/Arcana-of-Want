@@ -117,33 +117,31 @@ title: Mask_Select
 <<hide_character "AnnieSad">>
 <<set_background "Street">>
 <<show_character "Annie">>
-<<declare $mask_top = "">>
-<<if $simp > $arbiter and $simp > $martyr>>
-    <<set $mask_top = "simp">>
-<<elseif $arbiter > $simp and $arbiter > $martyr>>
-    <<set $mask_top = "arbiter">>
-<<elseif $martyr > $simp and $martyr > $arbiter>>
-    <<set $mask_top = "martyr">>
+<<declare $top_mask = "">>
+<<if $simp >= $arbiter and $simp >= $martyr>>
+    <<set $top_mask = "simp">>
+<<elseif $arbiter >= $simp and $arbiter >= $martyr>>
+    <<set $top_mask = "arbiter">>
 <<else>>
-    <<set $mask_top = "tie">>
+    <<set $top_mask = "martyr">>
 <<endif>>
 
 -> [Arbiter] I think our relationship is not serious enough for me to fly there.
-    <<if $mask_top != "arbiter" and $mask_top != "tie">>
+    <<if $top_mask != "arbiter">>
         Narration: (Locked — needs highest Arbiter)
         <<jump Mask_Select>>
     <<endif>>
     You: I think our relationship is not serious enough for me to fly there.
     <<jump Arbiter_Path>>
 -> [Simp] I met Kai the last few days. I think I still can't get over her.
-    <<if $mask_top != "simp" and $mask_top != "tie">>
+    <<if $top_mask != "simp">>
         Narration: (Locked — needs highest Simp)
         <<jump Mask_Select>>
     <<endif>>
     You: I met Kai the last few days. I think I still can't get over her.
     <<jump Simp_Path>>
 -> [Martyr] emmm, I'll think about it.
-    <<if $mask_top != "martyr" and $mask_top != "tie">>
+    <<if $top_mask != "martyr">>
         Narration: (Locked — needs highest Martyr)
         <<jump Mask_Select>>
     <<endif>>
