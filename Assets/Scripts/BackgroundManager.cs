@@ -53,19 +53,19 @@ public class BackgroundManager : MonoBehaviour
     // We register the command manually to avoid conflicts where Yarn treats the
     // first argument as a GameObject target. This prevents the runtime error
     // complaining that "Street doesn't have the correct component".
-    private static bool handlerRegistered = false;
+    private static DialogueRunner registeredRunner = null;
 
     private void RegisterCommand()
     {
         if (dialogueRunner == null)
             return;
 
-        if (handlerRegistered)
+        if (registeredRunner == dialogueRunner)
             return;
 
         dialogueRunner.AddCommandHandler("set_background", (System.Action<string>)SetBackground);
-        handlerRegistered = true;
-        Debug.Log("BackgroundManager: registered Yarn command 'set_background' (manual)");
+        registeredRunner = dialogueRunner;
+        Debug.Log($"BackgroundManager: registered Yarn command 'set_background' on runner '{dialogueRunner.name}'");
     }
 
     private void OnEnable()

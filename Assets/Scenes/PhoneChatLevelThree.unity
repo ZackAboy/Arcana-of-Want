@@ -840,7 +840,7 @@ MonoBehaviour:
   - {fileID: 1892563823}
   verboseLogging: 0
   autoStart: 1
-  startNode: LevelThreeDia
+  startNode: Kai_LateNight
   runSelectedOptionAsLine: 0
   allowOptionFallthrough: 1
   onNodeStart:

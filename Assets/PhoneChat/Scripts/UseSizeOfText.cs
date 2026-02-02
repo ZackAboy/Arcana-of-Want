@@ -127,7 +127,7 @@ namespace Yarn.Unity.Samples
                 return;
             }
 
-            info.textComponent.SetTextWrapping(true);
+            info.textComponent.enableWordWrapping = true;
 
             // Calculate the maximum width available to us by getting our
             // parent's width

@@ -24,7 +24,6 @@ namespace Yarn.Unity.Samples
         private int yarnLinkIndex = 0;
         private Dictionary<string, (string, bool)> paths = new Dictionary<string, (string, bool)>();
 
-#if UNITY_EDITOR
         void Awake()
         {
             if (runner != null)
@@ -44,6 +43,7 @@ namespace Yarn.Unity.Samples
             bool external = false;
             marker.TryGetProperty("external", out external);
 
+#if UNITY_EDITOR
             // if it's an internal path we should verify it is valid
             if (!external)
             {
@@ -53,6 +53,7 @@ namespace Yarn.Unity.Samples
                     return new ReplacementMarkerResult(new List<LineParser.MarkupDiagnostic>() { new LineParser.MarkupDiagnostic("The link guid is invalid") }, 0);
                 }
             }
+#endif
 
             var originalLength = childBuilder.Length;
             paths[$"{yarnLinkIndex}"] = (value, external);
@@ -103,12 +104,13 @@ namespace Yarn.Unity.Samples
                     }
                     else
                     {
+#if UNITY_EDITOR
                         var path = AssetDatabase.GUIDToAssetPath(element.Item1);
                         AssetDatabase.OpenAsset(AssetDatabase.LoadAssetAtPath<Object>(path));
+#endif
                     }
                 }
             }
         }
-#endif
     }
 }

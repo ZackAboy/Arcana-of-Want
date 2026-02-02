@@ -53,7 +53,7 @@ public class MaskOverlayHighlighter : MonoBehaviour
                 continue;
 
             string varName = slot.yarnVariableName.StartsWith("$") ? slot.yarnVariableName : $"${slot.yarnVariableName}";
-            if (!storage.TryGetValue(varName, out float current))
+            if (!storage.TryGetValue<float>(varName, out var current))
                 continue;
 
             if (current > slot.lastValue)
@@ -120,7 +120,7 @@ public class MaskOverlayHighlighter : MonoBehaviour
 
             // Seed lastValue from storage if present
             string varName = slot.yarnVariableName.StartsWith("$") ? slot.yarnVariableName : $"${slot.yarnVariableName}";
-            if (storage != null && storage.TryGetValue(varName, out float seed))
+            if (storage != null && storage.TryGetValue<float>(varName, out var seed))
             {
                 slot.lastValue = seed;
             }

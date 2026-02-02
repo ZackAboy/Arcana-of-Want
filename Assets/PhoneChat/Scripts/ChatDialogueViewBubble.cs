@@ -61,7 +61,7 @@ namespace Yarn.Unity.Samples
         {
             if (TextView != null)
             {
-                TextView.SetTextWrapping(true);
+                TextView.enableWordWrapping = true;
             }
             if (typingIndicator != null)
             {

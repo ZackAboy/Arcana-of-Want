@@ -6,10 +6,8 @@ title: LevelThreeDia
 title: Level3_Blake_Start
 ---
 <<declare $level3_entry = "">>
-Narration: <i>It's nearly the end of my application season.</i>
-Narration: <i>I should have never been with Sylvia.</i>
-Narration: <i>I don't even like her that much.</i>
-<<jump Kai_LateNight>>
+
+<<load_scene "PhoneChatLevelThree" "Kai_LateNight">>
 <<stop>>
 ===
 
