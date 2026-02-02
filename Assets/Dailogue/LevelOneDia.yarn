@@ -115,6 +115,7 @@ title: Kai_Early_End
 <<hide_character "Kai">>
 <<show_character "KaiSad">>
 <<hide_character "Kai">>
+<<hide_character "KaiSad">>
 I shouldn't say no to Kai.
 But I did.
 She's the only one that I ve ever loved.
@@ -123,6 +124,7 @@ She's the only one that I ve ever loved.
 
 title: Kai_Two_Weeks
 ---
+<<hide_all_characters>>
 <<set_background "Street">>
 Two weeks later.
 
@@ -157,7 +159,7 @@ Kai: You deserve better.
     <<set $arbiter += 3>>
 
 Kai: I'm sorry.
-<<hide_character "Kai">>
+<<hide_character "KaiSad">>
 
 <<jump Level2_Annie_Intro>>
 
@@ -165,6 +167,7 @@ Kai: I'm sorry.
 
 title: Level2_Annie_Intro
 ---
+<<hide_all_characters>>
 <<set_background "School">>
 I can't believe Kai is gone.
 I thought we were something special.
