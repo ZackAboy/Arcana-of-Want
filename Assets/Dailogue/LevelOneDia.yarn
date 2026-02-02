@@ -70,8 +70,11 @@ She has changed a lot since the last time I saw her,
 yet nothing has changed.
 Kai: I miss you.
 -> Yeah, it's been a while.
+    <<show_character "Kai">>
 -> I've missed you too.
     <<set $simp += 3>>
+    <<hide_character "Kai">>
+    <<show_character "KaiHappy">>
 <<jump Kai_Confession>>
 ===
 
@@ -80,23 +83,37 @@ title: Kai_Confession
 Kai: Do you still like me?
 -> I've always liked you.
     <<set $simp += 1>>
+    <<hide_character "Kai">>
+    <<show_character "KaiHappy">>
 -> Yeah, but as a friend.
+    <<hide_character "Kai">>
+    <<show_character "KaiSad">>
 -> It's kinda weird.
     <<set $arbiter += 1>>
+    <<hide_character "Kai">>
+    <<show_character "KaiSad">>
 
 Kai: Can we... be together, even if just for a short while?
 
 -> ...Let's see where this goes.
     <<set $arbiter += 1>>
+    <<hide_character "Kai">>
+    <<show_character "KaiHappy">>
 -> I don't think I can do this again.
+    <<hide_character "Kai">>
+    <<show_character "KaiSad">>
     <<jump Kai_Early_End>>
 -> Do you know how many times I have dreamed about this moment?
     <<set $simp += 2>>
+    <<hide_character "Kai">>
+    <<show_character "KaiHappy">>
 <<jump Kai_Two_Weeks>>
 ===
 
 title: Kai_Early_End
 ---
+<<hide_character "Kai">>
+<<show_character "KaiSad">>
 <<hide_character "Kai">>
 I shouldn't say no to Kai.
 But I did.
@@ -109,6 +126,8 @@ title: Kai_Two_Weeks
 <<set_background "Street">>
 Two weeks later.
 
+<<hide_character "Kai">>
+<<show_character "KaiSad">>
 Kai: I'm sorry, but I can't do this anymore.
 
 -> Why?

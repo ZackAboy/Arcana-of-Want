@@ -12,11 +12,11 @@ EditorBuildSettings:
     path: Assets/Scenes/TestScene.unity
     guid: 8c9cfa26abfee488c85f1582747f6a02
   - enabled: 1
-    path: Assets/Scenes/PhoneChat.unity
-    guid: 6d9e8b531acf94d42b2861431f5e3820
-  - enabled: 1
     path: Assets/Scenes/Main Menu.unity
     guid: f7c79c152f8e94f8d8d8ee8f2116f4ed
+  - enabled: 1
+    path: Assets/Scenes/PhoneChat.unity
+    guid: 6d9e8b531acf94d42b2861431f5e3820
   - enabled: 1
     path: Assets/Scenes/LevelOne.unity
     guid: 0fb59e7c5d49fac478c34344b91494e0
@@ -27,11 +27,11 @@ EditorBuildSettings:
     path: Assets/Scenes/PhoneChatLevelTwo.unity
     guid: 0a56c0c6b3fc843409aa833136dbd056
   - enabled: 1
-    path: Assets/Scenes/LevelThree.unity
-    guid: 196ac393823646b3832f573f1bbbf265
-  - enabled: 1
     path: Assets/Scenes/PhoneChatLevelThree.unity
     guid: 00d4166ea8d34b84a1fc389f07e97270
+  - enabled: 1
+    path: Assets/Scenes/LevelThree.unity
+    guid: 196ac393823646b3832f573f1bbbf265
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0

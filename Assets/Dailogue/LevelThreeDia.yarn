@@ -122,6 +122,8 @@ title: Blake_PostSchool
 ---
 <<set_background "Street">>
 
+<<hide_character "BlakeSad">>
+<<show_character "Blake">>
 Blake: Why did you break up with your ex?
 
 -> she ghosted me for 2 weeks.
@@ -148,6 +150,8 @@ Blake: I want to go to USC as well.
     You: you will get in.
 
 Blake: I wish we can go to USC together.
+<<hide_character "Blake">>
+<<show_character "BlakeSad">>
 Blake: But I feel like my parents are always trying to manipulate me, and I really want to get away from them.
 
 -> omg
@@ -170,6 +174,8 @@ Blake: I'm getting used to it. Sometimes they don't even give me money.
 title: Blake_Dinner
 ---
 <<set_background "Restaurant">>
+<<hide_character "BlakeSad">>
+<<show_character "Blake">>
 Narration: <i>The dinner is so good.</i>
 
 Blake: Did anyone tell you that you're cute?
@@ -185,6 +191,8 @@ Narration: <i>There's a strange vibe between Blake and me. She kisses me.</i>
 Narration: <i>We are together now. I do appreciate her and care about her.</i>
 
 Blake: I've been crushing on you for a long time, but you were with your ex.
+<<hide_character "Blake">>
+<<show_character "BlakeSad">>
 Blake: I think my mental state is actually terrible because of my family.
 
 -> I'm always here for you.
@@ -220,6 +228,8 @@ Blake: I was completely broken, but you're slowly putting me back together.
 title: Blake_Admission_Result
 ---
 <<set_background "School">>
+<<hide_character "Blake">>
+<<show_character "BlakeSad">>
 Narration: <i>I really like her. I think she might be the one.</i>
 Narration: <i>After a few weeks, the university has released the admission results.</i>
 Narration: <i>I get into USC. She doesn't reply to my message for the whole day.</i>
@@ -258,6 +268,8 @@ Blake: Are you able to go out tonight?
 title: Blake_Break_Up
 ---
 <<set_background "Street">>
+<<hide_character "Blake">>
+<<show_character "BlakeSad">>
 Narration: <i>Few weeks later, I feel like she's draining all my energy.</i>
 Narration: <i>I don't have much to say to her. She's so stubborn about the school.</i>
 
@@ -289,8 +301,10 @@ Blake: You look down on me.
 
 -> I never look down on anyone. But I can't do this anymore.
     You: I never look down on anyone. But I can't do this anymore.
+->I guess you just need to Fight On!™
+    You:I guess you just need to Fight On!™
 
 Blake: So this is it.
 Blake: I guess I should've known.
-<<hide_character "Blake">>
+<<hide_character "BlakeSad">>
 ===

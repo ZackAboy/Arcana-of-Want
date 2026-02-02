@@ -417,7 +417,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -116.321594, y: -301.0301}
+  m_AnchoredPosition: {x: -85, y: -407}
   m_SizeDelta: {x: 47.279, y: 94.048}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &332428954
@@ -440,7 +440,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -4444810096762276335, guid: 73426aac57147e8449198c9652ddd58c, type: 3}
+  m_Sprite: {fileID: -2809118747505173560, guid: 66aea7393451a47a6a5577ea10d8a754, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -490,6 +490,7 @@ MonoBehaviour:
   characters:
   - {fileID: 332428952}
   - {fileID: 1655286782}
+  - {fileID: 2005331954}
   dialogueRunner: {fileID: 0}
   highlightedColor: {r: 1, g: 1, b: 1, a: 1}
   dimmedColor: {r: 1, g: 1, b: 1, a: 0.4}
@@ -615,6 +616,7 @@ RectTransform:
   m_Children:
   - {fileID: 332428953}
   - {fileID: 1655286783}
+  - {fileID: 2005331955}
   m_Father: {fileID: 1236886659}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
@@ -878,6 +880,138 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1655286782}
   m_CullTransparentMesh: 1
+--- !u!1001 &1706026237
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2779078322683720055, guid: 9e1db9ac70edb47fc8c822b629170312, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 690.42773
+      objectReference: {fileID: 0}
+    - target: {fileID: 2779078322683720055, guid: 9e1db9ac70edb47fc8c822b629170312, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 531.9861
+      objectReference: {fileID: 0}
+    - target: {fileID: 2779078322683720055, guid: 9e1db9ac70edb47fc8c822b629170312, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2779078322683720055, guid: 9e1db9ac70edb47fc8c822b629170312, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2779078322683720055, guid: 9e1db9ac70edb47fc8c822b629170312, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2779078322683720055, guid: 9e1db9ac70edb47fc8c822b629170312, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2779078322683720055, guid: 9e1db9ac70edb47fc8c822b629170312, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2779078322683720055, guid: 9e1db9ac70edb47fc8c822b629170312, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2779078322683720055, guid: 9e1db9ac70edb47fc8c822b629170312, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2779078322683720055, guid: 9e1db9ac70edb47fc8c822b629170312, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7137810864842791351, guid: 9e1db9ac70edb47fc8c822b629170312, type: 3}
+      propertyPath: m_Name
+      value: BGMAudio
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 9e1db9ac70edb47fc8c822b629170312, type: 3}
+--- !u!1 &2005331954
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2005331955}
+  - component: {fileID: 2005331957}
+  - component: {fileID: 2005331956}
+  m_Layer: 5
+  m_Name: BlakeSad
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &2005331955
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2005331954}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 6.552474, y: 6.552474, z: 6.552474}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1000580222}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -745, y: -300.59}
+  m_SizeDelta: {x: 56, y: 85}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &2005331956
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2005331954}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 1082586929647570548, guid: c10acd0064eeb49289c9787665cc2d97, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &2005331957
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2005331954}
+  m_CullTransparentMesh: 1
 --- !u!1001 &671691706111429137
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1015,3 +1149,4 @@ SceneRoots:
   - {fileID: 1037730685}
   - {fileID: 165833741}
   - {fileID: 396609045}
+  - {fileID: 1706026237}
